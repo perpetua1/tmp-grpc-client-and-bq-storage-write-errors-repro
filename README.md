@@ -19,16 +19,14 @@ pip install -r requirements.txt
 
 # Error: `bidi.BackgroundConsumer` error log on shutdown
 
-## Repro:
+`simple_api_core_repro.py`: This script contains an extremely simple ping server and client 
+call using the `bidi.BidiRpc` and `bidi.BackgroundConsumer` classes.
 
 ```bash
 pipenv run python simple_api_core_repro.py
 ```
 
-* This script contains an extremely simple ping server and test client code
-* We simply create a BidiRpc and BackgroundConsumer, send one message, then shut it down
-
-## Output:
+Output:
 
 ```
 2024-02-02 12:54:30,708 - INFO - root - MainThread - Starting consumer
