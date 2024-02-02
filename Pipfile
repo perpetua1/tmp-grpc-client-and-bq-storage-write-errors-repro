@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+grpcio = "*"
+grpcio-tools = "*"
+google-cloud-bigquery = "*"
+google-cloud-bigquery-storage = "*"
+
+[requires]
+python_version = "3.9"
+

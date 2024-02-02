@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+package my_service;
+
+service MyService {
+  rpc PingStream(stream PingRequest) returns (stream PingResponse) {}
+}
+
+message PingRequest {
+  int64 number = 1;
+}
+
+message PingResponse {
+  int64 number = 1;
+}
