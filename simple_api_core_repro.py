@@ -83,7 +83,7 @@ if __name__ == "__main__":
     server.start()
 
     # Run the client test code
-    run_client_code()
+    perform_ping()
 
     # Shut everything down
     server.stop(5)
