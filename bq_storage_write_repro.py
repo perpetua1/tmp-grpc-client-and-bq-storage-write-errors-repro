@@ -102,6 +102,7 @@ if __name__ == "__main__":
     logging.basicConfig(
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(name)s - %(threadName)s - %(message)s",
+        datefmt="%H:%M:%S",
         handlers=[logging.StreamHandler()],
     )
 
@@ -116,4 +117,4 @@ if __name__ == "__main__":
         bq_client = bigquery.Client(project=args.project_id)
         bq_client.query(create_table_sql).result()
 
-    do_insert(args)
+    do_insert_via_append_rows_stream(args)

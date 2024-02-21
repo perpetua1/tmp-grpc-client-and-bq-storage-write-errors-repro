@@ -73,6 +73,7 @@ if __name__ == "__main__":
     logging.basicConfig(
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(name)s - %(threadName)s - %(message)s",
+        datefmt="%H:%M:%S",
         handlers=[logging.StreamHandler()],
     )
 
