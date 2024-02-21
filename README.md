@@ -5,6 +5,8 @@ Please note this is a public repo.
 This repo contains code to reproduces errors we have encountered with the python grpc client and bigquery 
 storage write API.
 
+See bug report here: https://github.com/googleapis/python-api-core/issues/619
+
 # Setup
 
 ```bash
